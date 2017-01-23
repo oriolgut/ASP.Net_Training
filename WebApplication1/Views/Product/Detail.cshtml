@@ -1,0 +1,11 @@
+﻿@model WebApplication1.ViewModels.Home.ProductViewModel
+
+<h3>@Model.Name</h3>
+<ul>
+    <li>Preis: @Model.Price</li>
+    <li>Ablaufdatum: @Model.ExpiryDate</li>
+    <li>Beschreibung: @Model.Description</li>
+</ul>
+<div>
+    @Html.ActionLink("Back to List", "Index", "Home")
+</div>
