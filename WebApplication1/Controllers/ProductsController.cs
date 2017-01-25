@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using System.Web.Script.Serialization;
 using WebApplication1.DAL;
 using WebApplication1.Models;
+using WebApplication1.ViewModels;
 using WebApplication1.ViewModels.Home;
 
 namespace WebApplication1.Controllers
