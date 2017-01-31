@@ -5,16 +5,6 @@
 }
 
 <h2>Weather</h2>
-@*City Name: <p id="name"></p>
-<hr />
-Temperature: <p id="temp"></p>
-Humidity: <p id="humidity"></p>
-
-<button id="buttonId">Get Weather</button>
-
-@section scripts{
-   <script src="~/Scripts/Home/weather.js" type="text/javascript"></script>
-     }*@
-City Name: @Html.ValidationMessageFor(model => model.CityName, "", new { @class = "text-danger" })
-Temperature: @Html.ValidationMessageFor(model => model.Temperature, "", new { @class = "text-danger" })
-Humidity: @Html.ValidationMessageFor(model => model.Humidity, "", new { @class = "text-danger" })
+<p>City Name: @Model.CityName</p>
+<p>Temperature: @Model.Temperature</p>
+<p>Humidity: @Model.Humidity</p>

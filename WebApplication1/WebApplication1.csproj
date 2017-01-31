@@ -214,8 +214,8 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\OpenWeatherMap.cs" />
     <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\Weather.cs" />
     <Compile Include="ViewModels\Home\WeatherViewModel.cs" />
     <Compile Include="ViewModels\ProductViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
