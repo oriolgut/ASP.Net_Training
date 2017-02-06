@@ -8,3 +8,4 @@
 <p>City Name: @Model.CityName</p>
 <p>Temperature: @Model.Temperature</p>
 <p>Humidity: @Model.Humidity</p>
+<img src="@Url.Content($"http://openweathermap.org/img/w/{Model.Icon}.png")" title="@Model.IconTitle" alt="Picture_@Model.IconTitle" />
