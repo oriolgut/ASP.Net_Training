@@ -44,8 +44,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Aliencube.CloudConvert.Wrapper, Version=0.5.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aliencube.CloudConvert.NET.0.5.1.1\lib\net45\Aliencube.CloudConvert.Wrapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AutoMapper, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.0.0\lib\net40\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AutoMapper.Net4, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.3.0.0\lib\net40\AutoMapper.Net4.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -196,9 +208,11 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\ConvertController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\WeatherController.cs" />
     <Compile Include="DAL\ProductsContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -291,6 +305,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <Content Include="Views\Weather\Index.cshtml" />
+    <Content Include="Views\Convert\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
